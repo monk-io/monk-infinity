@@ -10,4 +10,4 @@ base:
     utils:
       image: busybox
       image-tag: latest
-      entrypoint: <- `sleep infinity`
+      bash: sleep infinity
