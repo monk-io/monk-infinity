@@ -1,0 +1,13 @@
+---
+namespace: infinity
+
+base:
+  defines: runnable
+  metadata:
+    private: true
+    name: infinite sleep container
+  containers:
+    utils:
+      image: busybox
+      image-tag: latest
+      entrypoint: <- `sleep infinity`
