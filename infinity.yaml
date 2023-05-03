@@ -11,3 +11,12 @@ base:
       image: busybox
       image-tag: latest
       bash: sleep infinity
+
+sleep30:
+  defines: runnable
+  inherits: infinity/base
+  metadata:
+    name: sleep 30s and exit
+  containers:
+    utils:
+      bash: sleep 30
